@@ -77,7 +77,7 @@ function App() {
 
   function toggleHabit(id) {
     const today = getToday();
-    const todayDate = new Date().toISOString().split("T")[0];
+    const todayDate = new Date().toLocaleDateString("en-CA");
 
     setHabits(habits.map(habit => {
       if (habit.id === id) {
